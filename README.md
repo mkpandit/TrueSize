@@ -6,7 +6,7 @@
 
 - Create a Postgres database
 - Import [SQL](truefit.pgsql) file
-- Update `.env` file
+- Update [ENV](.env) file
 
 ### NPM Install
 
