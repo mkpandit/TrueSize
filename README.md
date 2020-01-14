@@ -35,12 +35,32 @@ This service is developed with:
     - Request takes only shoe id, shoe name is supported yet
     - @TO-DO: enable the service to take shoe name
 
+### Sample GET output
+
+```JSON
+{
+    "status":"ok",
+    "data":{
+        "truetosizecalculation":"3.0000000000000000"
+    }
+}
+```
+
 ### POST
 
 - On a terminal type `curl --data "shoe_id=$i&value=$v" http://localhost:3000/true-size`
     - replace `$i` and `$v` with **shoe id** and **true-to-size data**
 - should return status and last insert id
 - @TO-DO: implement standard NodeJS validation
+
+### Sample POST output
+
+```JSON
+{
+    "status":"ok",
+    "data":"Inserted with ID: 30"
+}
+```
 
 ### Helper
 
