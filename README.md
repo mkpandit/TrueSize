@@ -1,5 +1,12 @@
 # TrueSizeCalculation
 
+A micro service which accepts a valid true-to-size data and stores in a relational database. It provides calculated true-to-size value for a specific shoe (requested with shoe id). If shoe id is not provided, it returns the calculation based on all shoes true-to-size data.
+
+This service is developed with:
+
+- NodeJS
+- Postgres
+
 ## Setup
 
 ### Prepare Database
