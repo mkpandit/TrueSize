@@ -15,6 +15,7 @@
 - On a terminal type `npm run start` and hit enter to run the service or
 - Type `npm run start:dev` and hit to run dev mode
 - On browser, navigate to `http://localhost:3000` to access the service
+- Note: port number `3000` is defined in `ENV` file
 
 ## Usage
 
