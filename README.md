@@ -5,14 +5,16 @@
 ### Prepare Database
 
 - Create a Postgres database
-- import [SQL](truefit.pgsql) file
+- Import [SQL](truefit.pgsql) file
+- Update `.env` file
 
 ### NPM Install
 
-- move to project directory
-- run `npm install`
-- on a terminal type `npm run start` and hit enter to run the service or
-- type `npm run start:dev` and hit to run dev mode
+- Move to project directory
+- Run `npm install`
+- On a terminal type `npm run start` and hit enter to run the service or
+- Type `npm run start:dev` and hit to run dev mode
+- On browser, navigate to `http://localhost:3000` to access the service
 
 ## Usage
 
@@ -28,6 +30,11 @@
 ### POST
 
 - On a terminal type `curl --data "shoe_id=$i&value=$v" http://localhost:3000/true-size`
-    - replace `$i` and `$v` with shoe id and true-to-size data
+    - replace `$i` and `$v` with **shoe id** and **true-to-size data**
 - should return status and last insert id
 - @TO-DO: implement standard NodeJS validation
+
+### Helper
+
+- Logger helps in logging error and information
+- @TO-DO: implement logger more precisely
