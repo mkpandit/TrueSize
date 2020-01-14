@@ -9,7 +9,6 @@ const limit = require('express-rate-limit')
  * Define constants to be used in Service
  */
 require('dotenv').config()
-const port = 3000
 // Determine environment development or production
 const isProd = process.env.NODE_ENV === 'production'
 const origin = {
@@ -54,6 +53,6 @@ app.post('/true-size', routes.addTrueSize)
 /**
  * Start True to Size Calculation service
  */
-app.listen(port, () => {
-    console.log(`App running on port ${port}`)
+app.listen(process.env.SERVICE_PORT, () => {
+    console.log(`App running on port ${process.env.SERVICE_PORT}`)
 })
